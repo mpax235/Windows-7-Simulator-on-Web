@@ -44,6 +44,17 @@ body, html {
     font-family: 'Segoe UI';
 }
 
+#date {
+    float: right;
+    text-align: right;
+    padding: 2px 40px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    margin-left: auto;
+    font-family: 'Segoe UI';
+}
+
 body {
     cursor: url('../sources/arrow.png'), auto;
 }
