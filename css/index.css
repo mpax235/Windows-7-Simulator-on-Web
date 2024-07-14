@@ -21,7 +21,7 @@ body, html {
 
 #logonavbartaskicon {
     width: auto;
-    height: 40px;
+    height: 50px;
     margin: 4px 0px 0px 20px
 }
 
@@ -47,7 +47,7 @@ body, html {
 #date {
     float: right;
     text-align: right;
-    padding: 2px 40px;
+    padding: 15px 40px;
     text-decoration: none;
     font-size: 17px;
     color: white;
