@@ -21,8 +21,9 @@ body, html {
 
 #logonavbartaskicon {
     width: auto;
-    height: 50px;
-    margin: 4px 0px 0px 20px
+    height: 42px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
 }
 
 .taskbar {
@@ -30,6 +31,7 @@ body, html {
     overflow: hidden;
     font-family: 'DefaultFontLight';
     margin: 0;
+    align-items: center;
 }
 
 body {
@@ -40,12 +42,11 @@ a {
     cursor: url('../sources/link.png'), auto;
 }
 
-#time {
-    float: right;
+.datetime {
     text-align: center;
-}
-
-#date {
     float: right;
-    text-align: center;
+    margin: -10px 25px;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    color: #FFFFFF;
 }
