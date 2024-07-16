@@ -30,29 +30,6 @@ body, html {
     overflow: hidden;
     font-family: 'DefaultFontLight';
     margin: 0;
-    display: flex;
-}
-
-#time {
-    float: right;
-    text-align: right;
-    padding: 2px 40px;
-    text-decoration: none;
-    font-size: 17px;
-    color: white;
-    margin-left: auto;
-    font-family: 'Segoe UI';
-}
-
-#date {
-    float: right;
-    text-align: right;
-    padding: 15px 40px;
-    text-decoration: none;
-    font-size: 17px;
-    color: white;
-    margin-left: auto;
-    font-family: 'Segoe UI';
 }
 
 body {
@@ -61,4 +38,16 @@ body {
 
 a {
     cursor: url('../sources/link.png'), auto;
+}
+
+#time {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+    float: right;
 }
