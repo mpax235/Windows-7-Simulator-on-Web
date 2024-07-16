@@ -41,13 +41,11 @@ a {
 }
 
 #time {
-    display: flex;
-    flex-direction: column;
     float: right;
+    text-align: center;
 }
 
 #date {
-    display: flex;
-    flex-direction: column;
     float: right;
+    text-align: center;
 }
