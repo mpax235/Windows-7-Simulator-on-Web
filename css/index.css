@@ -50,3 +50,10 @@ a {
     font-family: 'Segoe UI';
     color: #FFFFFF;
 }
+
+#internetexplorer {
+    width: auto;
+    height: 42px;
+    margin: 4px 0px 0px 10px;
+    z-index: -1;
+}
