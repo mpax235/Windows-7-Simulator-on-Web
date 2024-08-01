@@ -58,3 +58,8 @@ a {
     margin: 4px 0px 0px 10px;
     z-index: -1;
 }
+
+.oops {
+    font-family: 'Segoe UI';
+    text-align: center;
+}
