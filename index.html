@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style> 
+            .taskbar {
+                text-align: center;
+                position: fixed; /* Keeps it fixed at the bottom */
+                bottom: 0; /* Positions it at the bottom */
+                left: 50%; /* Centers it horizontally */
+                transform: translateX(-50%); /* Adjusts for centering */
+                height: 60px; /* Reduced height to look like a taskbar */
+                width: 100%; /* Makes it full width */
+                background-color: green;
+                display: flex; /* Uses flexbox to align items */
+                align-items: center; /* Vertically centers items */
+                justify-content: space-between; /* Spaces items evenly */
+                padding: 0 20px; /* Adds padding for inner spacing */
+                box-sizing: border-box; /* Includes padding in width/height */
+            }
+            .datetime {
+                text-align: right;
+            }
+            p {
+                margin: 0;
+            }
+        </style>
         <title>Windows 7</title>
         <link rel="stylesheet" href="css/index.css">
         <script src="js/time.js"></script>
@@ -9,15 +32,13 @@
     </head>
     <body>
         <img src="sources/win7.png" id="WIN7BG">
-        <div>
-                    <div class="taskbar">
+        <div class="taskbar">
             <img class="active" src="sources/win.png" id="logonavbartaskicon">
             <img class="active" src="sources/ie.png" id="internetexplorer">
             <div class="datetime">
                 <p id="time"></p>
                 <p id="date"></p>
             </div>
-        </div>
         </div>
     </body>
 </html>
