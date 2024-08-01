@@ -28,7 +28,7 @@ body, html {
 }
 
 .taskbar {
-    background-image: radial-gradient(rgba(0,179,255,1), rgba(0,154,220,1));
+    background-image: url('../sources/win7taskbar.png');
     overflow: hidden;
     font-family: 'DefaultFontLight';
     margin: 0;
