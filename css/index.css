@@ -22,7 +22,7 @@ body, html {
 
 #logonavbartaskicon {
     width: auto;
-    height: 42px;
+    height: 36px;
     margin: 4px 0px 0px 20px;
     z-index: -1;
 }
@@ -54,7 +54,7 @@ a {
 
 #internetexplorer {
     width: auto;
-    height: 42px;
+    height: 36px;
     margin: 4px 0px 0px 10px;
     z-index: -1;
 }
