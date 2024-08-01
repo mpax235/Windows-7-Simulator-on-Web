@@ -6,3 +6,5 @@ This is a Windows 7 simulator made with HTML, CSS and JavaScript.
 - Microsoft for the Windows 7 textures and Segoe UI font
 - Steve Matteson for the Segoe UI font
 - [intendo-dev](https://github.com/intendo-dev) for helping me with some coding
+### Contributor Credits
+- [wish13yt](https://github.com/wish13yt) for contributing to this project
