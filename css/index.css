@@ -27,12 +27,31 @@ body, html {
     z-index: -1;
 }
 
+#internetexplorer {
+    width: auto;
+    height: 36px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+}
+
 .taskbar {
     background-image: url('../sources/win7taskbar.png');
     overflow: hidden;
     font-family: 'DefaultFontLight';
     margin: 0;
-    align-items: center;
+    text-align: left;
+    position: fixed; /* Keeps it fixed at the bottom */
+    bottom: 0; /* Positions it at the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts for centering */
+    height: 50px; /* Reduced height to look like a taskbar */
+    width: 100%; /* Makes it full width */
+    background-color: none;
+    display: flex; /* Uses flexbox to align items */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Spaces items evenly */
+    padding: 0 20px; /* Adds padding for inner spacing */
+    box-sizing: border-box; /* Includes padding in width/height */
 }
 
 body {
@@ -43,6 +62,10 @@ a {
     cursor: url('../sources/link.png'), auto;
 }
 
+p {
+    margin: 0px;
+}
+
 .datetime {
     text-align: center;
     float: right;
@@ -50,13 +73,6 @@ a {
     font-size: 14px;
     font-family: 'Segoe UI';
     color: #FFFFFF;
-}
-
-#internetexplorer {
-    width: auto;
-    height: 36px;
-    margin: 4px 0px 0px 10px;
-    z-index: -1;
 }
 
 .oops {
