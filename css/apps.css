@@ -1,0 +1,31 @@
+#logonavbartaskicon {
+    width: auto;
+    height: 38px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+    align-self: center;
+}
+
+#internetexplorer {
+    width: auto;
+    height: 32px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+    align-self: center;
+}
+
+#fileexplorer {
+    width: auto;
+    height: 32px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+    align-self: center;
+}
+
+#mediaplayer {
+    width: auto;
+    height: 32px;
+    margin: 4px 0px 0px 20px;
+    z-index: -1;
+    align-self: center;
+}

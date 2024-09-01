@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style> 
-            .taskbar {
-                text-align: left;
-                position: fixed; /* Keeps it fixed at the bottom */
-                bottom: 0; /* Positions it at the bottom */
-                left: 50%; /* Centers it horizontally */
-                transform: translateX(-50%); /* Adjusts for centering */
-                height: 50px; /* Reduced height to look like a taskbar */
-                width: 100%; /* Makes it full width */
-                background-color: none;
-                display: flex; /* Uses flexbox to align items */
-                align-items: center; /* Vertically centers items */
-                justify-content: space-between; /* Spaces items evenly */
-                padding: 0 20px; /* Adds padding for inner spacing */
-                box-sizing: border-box; /* Includes padding in width/height */
-            }
-        </style>
         <title>Windows 7</title>
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index.css"> <!--this is for the main core-->
+        <link rel="stylesheet" href="css/apps.css"> <!--this is for the apps/start button-->
         <script src="js/time.js"></script>
         <script src="js/date.js"></script>
         <link rel="icon" href="sources/win.png">
     </head>
     <body>
-        <img src="sources/win7.png" id="WIN7BG">
         <div class="taskbar">
-          <a href="win">  <img class="active" src="sources/win.png" id="logonavbartaskicon"> </a>
-           <a href="iexplore"> <img class="active" src="sources/ie.png" id="internetexplorer"> </a>
+            <div class="logos">
+                <a href="win.html">  <img class="active" src="sources/taskbar/win.png" id="logonavbartaskicon"> </a>
+                <a href="iexplore.html"> <img class="active" src="sources/apps/ie.png" id="internetexplorer"> </a>
+                <a href="fileexplore.html"> <img class="active" src="sources/apps/explorer.png" id="fileexplorer"> </a>
+                <a href="mediaplay.html"> <img class="active" src="sources/apps/mediaplayer.png" id="mediaplayer"> </a>
+            </div>
             <div class="datetime">
                 <p id="time"></p>
                 <p id="date"></p>
