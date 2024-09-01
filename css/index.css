@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'Segoe UI';
-    src: url('/sources/fonts/segoeui.ttf')
+    src: url('../sources/fonts/segoeui.ttf')
 }
 
 body {
     background-color: black;
-    background-image: url('/sources/wallpapers/win7.png');
+    background-image: url('../sources/wallpapers/win7.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@ body {
 }
 
 .taskbar {
-    background-image: url('/sources/taskbar/win7taskbar.png');
+    background-image: url('../sources/taskbar/win7taskbar.png');
     overflow: hidden;
     font-family: 'Segoe UI';
     margin: 0;
@@ -42,11 +42,11 @@ body {
 }
 
 body {
-    cursor: url('/sources/cursors/arrow.png'), auto;
+    cursor: url('../sources/cursors/arrow.png'), auto;
 }
 
 a {
-    cursor: url('/sources/cursors/link.png'), auto;
+    cursor: url('../sources/cursors/link.png'), auto;
 }
 
 p {
