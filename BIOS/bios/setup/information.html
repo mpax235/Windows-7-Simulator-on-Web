@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Windows 7</title>
+        <link rel="stylesheet" href="../../css/bios.css"> <!--this is for the main core-->
+        <link rel="icon" href="sources/taskbar/win.png">
+        <style>
+            body {
+                background-color: #d3d3d3;
+            }
+
+            .active {
+                color: #0000ff;
+                background-color: #d3d3d3;
+            }
+
+            hr {
+                width: 99%;
+                color: #0000ff;
+                background-color: #0000ff;
+            }
+
+            table {
+                border: #0000ff;
+                min-width: 100%;
+                border-spacing: 0px;
+                display: table;
+                border-collapse: separate;
+                box-sizing: border-box;
+                text-indent: initial;
+                unicode-bidi: isolate;
+                border-color: #0000ff;
+                margin: 0px;
+            }
+
+            .spacer {
+                height: 15px;
+            }
+
+            .spacer td {
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="setup">
+            <div class="SetupBrowser">
+                <div class="SetupBrowser-Header">
+                    <a>BIOS Setup Utility</a>
+                </div>
+                <div class="SetupBrowser-Option">
+                    <a class="active" href="information.html">Main</a>
+                    <a>Advanced</a>
+                    <a>Power</a>
+                    <a>Boot</a>
+                    <a>Exit</a>
+                </div>
+                <br>
+                <marquee>This page is a W.I.P which is why it looks messy for now :)</marquee>
+                <div class="SetupUtility">
+                    <table>
+                        <tr>
+                            <td>System BIOS Version:</td>
+                            <td id="bios-info"></td>
+                        </tr>
+                        <tr class="spacer">
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr></tr>
+                            <td>Product Name:</td>
+                            <td>Windows 7 Simulator on Web</td>
+                        </tr>
+                        <tr>
+                            <td>Manufacturer Name:</td>
+                            <td>mpax235</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="SetupBrowser-Help1">
+                    <div class="SetupBrowser-Help11">
+                        <a class="white">F1</a>
+                        <a>Help</a>
+                    </div>
+                    <div class="SetupBrowser-Help22">
+                        <a class="white">Esc</a>
+                        <a>Exit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function getOSInfo() {
+            let userAgent = navigator.userAgent;
+            let os = "Unknown OS";
+
+            if (userAgent.indexOf("Win") !== -1) {
+                os = "Windows";
+                if (userAgent.indexOf("Windows NT 10.0") !== -1) os += " 10 / 11";
+                else if (userAgent.indexOf("Windows NT 6.3") !== -1) os += " 8.1";
+                else if (userAgent.indexOf("Windows NT 6.2") !== -1) os += " 8";
+                else if (userAgent.indexOf("Windows NT 6.1") !== -1) os += " 7";
+                else if (userAgent.indexOf("Windows NT 6.0") !== -1) os += " Vista";
+                else if (userAgent.indexOf("Windows NT 5.1") !== -1) os += " XP";
+                } else if (userAgent.indexOf("Mac") !== -1) {
+                    os = "macOS";
+                } else if (userAgent.indexOf("Linux") !== -1) {
+                    os = "Linux";
+                } else if (userAgent.indexOf("Android") !== -1) {
+                    os = "Android";
+                } else if (userAgent.indexOf("like Mac") !== -1) {
+                    os = "iOS";
+                }
+
+                return os;
+            }
+
+            document.getElementById('bios-info').innerText = "" + getOSInfo();
+        </script>
+    </body>
+</html>

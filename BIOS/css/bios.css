@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'BIOS';
+    src: url('../sources/fonts/DOSVGA437.ttf')
+}
+
+.SetupBrowser {
+    font-family: BIOS;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.SetupBrowser-Header {
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+    background-color: #00ffff;
+}
+
+.SetupBrowser-Option {
+    margin: px;
+    padding: 3px;
+    text-align: left;
+    background-color: #0000ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.SetupBrowser-Help1 {
+    background-color: #00ffff;
+    padding: 3px;
+}
