@@ -24,32 +24,16 @@
                 <marquee>This page is a W.I.P which is why it looks messy for now :)</marquee>
                 <br>
                 <div class="SetupUtility">
-                    <table>
-                        <tr></tr>
-                            <td>Product Name</td>
-                            <td>Windows 7 Simulator on Web</td>
-                        </tr>
-                        <tr>
-                            <td>BIOS Version</td>
-                            <td id="bios-info"></td>
-                        </tr>
-                        <tr></tr>
-                            <td>EC Version</td>
-                            <td id="bios-info1"></td>
-                        </tr>
-                        <tr>
-                            <td>Manufacturer</td>
-                            <td>mpax235</td>
-                        </tr>
-                        <tr class="spacer">
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr></tr>
-                            <td>OS Installed</td>
-                            <td>Windows 7</td>
-                        </tr>
-                    </table>
+                    <a>Exit Saving Changes</a>
+                    <br>
+                    <a href="../../../index.html">Exit Discarding Changes</a>
+                    <br>
+                    <a>Discard Changes</a>
+                    <br>
+                    <a>Save Changes</a>
+                    <br>
+                    <br>
+                    <a>Load Default Settings</a>
                 </div>
                 <div class="SetupBrowser-Footer">
                     <div class="SetupBrowser-Help11">
@@ -65,35 +49,5 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            function getOSInfo() {
-            let userAgent = navigator.userAgent;
-            let os = "Unknown OS";
-
-            if (userAgent.indexOf("Win") !== -1) {
-                os = "Windows";
-                if (userAgent.indexOf("Windows NT 10.0") !== -1) os += " 10 / 11";
-                else if (userAgent.indexOf("Windows NT 6.3") !== -1) os += " 8.1";
-                else if (userAgent.indexOf("Windows NT 6.2") !== -1) os += " 8";
-                else if (userAgent.indexOf("Windows NT 6.1") !== -1) os += " 7";
-                else if (userAgent.indexOf("Windows NT 6.0") !== -1) os += " Vista";
-                else if (userAgent.indexOf("Windows NT 5.1") !== -1) os += " XP";
-                } else if (userAgent.indexOf("Mac") !== -1) {
-                    os = "macOS";
-                } else if (userAgent.indexOf("Linux") !== -1) {
-                    os = "Linux";
-                } else if (userAgent.indexOf("Android") !== -1) {
-                    os = "Android";
-                } else if (userAgent.indexOf("like Mac") !== -1) {
-                    os = "iOS";
-                }
-
-                return os;
-            }
-
-            document.getElementById('bios-info').innerText = "" + getOSInfo();
-            document.getElementById('bios-info1').innerText = "" + getOSInfo();
-        </script>
     </body>
 </html>

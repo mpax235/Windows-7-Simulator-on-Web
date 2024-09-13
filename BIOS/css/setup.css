@@ -65,3 +65,11 @@ li a {
 .invisible {
     color: #00ffff;
 }
+
+.SetupUtility-Information {
+    color: #000000;
+}
+
+.SetupUtility {
+    color: #0000ff;
+}
