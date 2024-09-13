@@ -19,18 +19,15 @@ body {
     background-color: #00ffff;
 }
 
-.SetupBrowser-Option {
-    margin: px;
-    padding: 3px;
-    text-align: left;
-    background-color: #0000ff;
-}
-
 a {
     text-decoration: none;
 }
 
-.SetupBrowser-Help1 {
+.SetupBrowser-Footer {
     background-color: #00ffff;
     padding: 3px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 3px 0px;
 }
